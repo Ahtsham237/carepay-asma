@@ -219,7 +219,7 @@ public class SignUp extends AppCompatActivity {
         });
     }
     private void onAuthSuccess(FirebaseUser firebaseUser,String url) {
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase = FirebaseDatabase.getInstance().getReferenceFromUrl("https://carepay-3897d-default-rtdb.firebaseio.com");//("https://carepay-3897d-default-rtdb.firebaseio.com/");
         User user = new User();
         user.setName(name.getText().toString());
         user.setEmail(firebaseUser.getEmail());
