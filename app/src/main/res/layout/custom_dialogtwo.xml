@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:background="@drawable/backgroundprofile"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10ssp"
+        android:layout_height="@dimen/_35sdp">
+        <EditText
+            android:layout_weight="1.8"
+            android:layout_width="0dp"
+            android:id="@+id/edt_profilename"
+            android:background="@null"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/name"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:hint="Name"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textColor="#fff"
+            android:text="Update"
+            android:background="@drawable/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textColor="#fff"
+            android:text="Cancel"
+            android:background="@drawable/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

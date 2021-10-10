@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ngo.NGOMainScreen">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/framelayout"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_person" />
+    </FrameLayout>
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:inactive_centre_button_icon_color="@color/colorPrimary"
+        app:centre_button_color="@color/white"
+        app:inactive_item_color="@color/white"
+        app:space_background_color="@color/colorPrimary"
+        app:centre_button_icon="@drawable/upload"
+        app:space_item_icon_size="22dp"
+        app:space_item_icon_only_size="22dp"
+        app:space_item_text_size="8sp"  />
+    <!--<it.sephiroth.android.library.bottomnavigation.BottomNavigation
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:bbn_entries="@menu/ngomenu"
+        android:layout_alignParentBottom="true"
+        app:bbn_scrollEnabled="true"
+        app:bbn_badgeProvider="@string/bbn_badgeProvider"
+        app:layout_behavior="@string/bbn_phone_view_behavior" />-->
+
+</RelativeLayout>

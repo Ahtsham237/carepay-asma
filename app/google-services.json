@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1012575968169",
+    "project_id": "carepay-3897d",
+    "storage_bucket": "carepay-3897d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012575968169:android:bee04b29f805f7eaa682b8",
+        "android_client_info": {
+          "package_name": "com.example.carepay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012575968169-fe0nfkffljqq99ivpastn6qc1i37t66f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOfxUdDU7TNRDS5nRQ9k5KyEdgFdqd1Bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012575968169-fe0nfkffljqq99ivpastn6qc1i37t66f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

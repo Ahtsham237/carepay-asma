@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:background="#17000000"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_vertical"
+                    android:layout_height="@dimen/_80sdp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/colorPrimary"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/editphotoprofile"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00ffffff"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_edit"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:background="@drawable/backgroundprofile"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10ssp"
+                android:layout_height="@dimen/_35sdp">
+
+                <TextView
+                    android:layout_weight="1.8"
+                    android:layout_width="0dp"
+                    android:id="@+id/edt_profilename"
+                    android:background="@null"
+                    android:editable="false"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/name"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:hint="Name"/>
+                <ImageView
+                    android:id="@+id/edit_nameimg"
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#00ffffff"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_edit"
+                    android:layout_alignParentRight="true" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/_10sdp"
+                android:background="@drawable/backgroundprofile"
+                android:gravity="center"
+                android:layout_height="@dimen/_35sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/edt_email"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_mail"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:hint="Email"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
